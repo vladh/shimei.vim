@@ -19,8 +19,8 @@ hi def link shimeiGoalDef SpecialChar
 " log file
 syn match shimeiDate "^[0-9]\{2,4\}-[0-9]\{2\}-[0-9]\{2,4\}"
 syn match shimeiProjRef contained "\[[a-zA-Z0-9]\{4\}\]"
-syn region shimeiProjRefContainer start="\s\+- " end="$" contains=shimeiProjRef
-syn match shimeiGoalRef "\[[a-zA-Z0-9]\{4\}![a-zA-Z0-9]\{4\}\]"
+syn match shimeiGoalRef contained "\[[a-zA-Z0-9]\{4\}![a-zA-Z0-9]\{4\}\]"
+syn region shimeiProjRefContainer start="\s\+- " end="$" contains=shimeiProjRef,shimeiGoalRef
 
 hi def link shimeiDate Keyword
 hi def link shimeiProjRef Keyword
