@@ -1,6 +1,6 @@
 # shimei.vim
 
-Syntax highlighting files for the shimei task system.
+Syntax highlighting files for the [shimei task system](https://github.com/vladh/shimei).
 
 ## Installation
 
